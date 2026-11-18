@@ -4,7 +4,8 @@ Site mantido diretamente em HTML, CSS e JavaScript puro. O histórico de versõe
 
 ## Como abrir
 - Duplo clique em `index.html` já funciona (links relativos).
-- Para publicar: envie todo o conteúdo desta pasta para a raiz do domínio (Hostinger, Apache, Netlify, Vercel, GitHub Pages...).
+- Para publicar: envie os arquivos do site (raiz do repositório) para a raiz do domínio (Hostinger, Apache, Netlify, Vercel, GitHub Pages...).
+  Não é preciso enviar `.git/`, `.gitignore`, `HISTORICO.md` e `LEIA-ME.md`, que são de uso interno.
   Em Apache/Hostinger, o `.htaccess` redireciona /sobre e o endereço antigo /sobre.html para /html/sobre.html.
 
 ## Estrutura
