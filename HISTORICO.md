@@ -1,7 +1,7 @@
 # Site Filipe Denki — Histórico de versões
 
 **Versão atual: v2.2 — 18/11/2026, 10h28 — HTML, CSS e JS, sem framework**
-Pasta: `v2.2_2026-11-18_10h28_html/site-html/`
+Pasta: `filipedenki-v2.2_2026-11-18_10h28_html/`
 
 Repositório: `git@github.com:hianmatheuscmiranda/filipedenki.git` (cópia de trabalho em `Documents/GitHub/filipedenki`).
 As versões até a v2.1 também estão no OneDrive, em `Colaboradores/Hian/Site Denki/versoes/`.
@@ -13,12 +13,20 @@ Novas alterações são feitas em uma nova versão; as versões anteriores ficam
 
 ## Como criar uma nova versão
 
+Padrão adotado a partir da v2.2 (modelo: `filipedenki-v2.2_2026-11-18_10h28_html/`):
+
 1. Copie a pasta da versão atual para uma nova pasta na raiz do repositório, no padrão
-   `vX.Y_AAAA-MM-DD_HHhMM_descricao` (ex.: `v2.1_2026-12-05_14h30_html`).
+   `filipedenki-vX.Y_AAAA-MM-DD_HHhMM_descricao` (ex.: `filipedenki-v2.3_2026-12-05_14h30_html`).
    Data e horário são os do fechamento da versão (horário de Brasília). O Windows não aceita ":" em nomes de pasta, por isso "14h30".
-2. Faça as alterações apenas na nova pasta.
-3. Gere o .zip para publicação com o nome `site-filipe-denki_vX.Y_AAAA-MM-DD_HHhMM.zip` dentro da pasta da versão.
-4. Registre a versão abaixo, no topo da lista (data e horário, o que mudou, se foi publicada).
+2. Os arquivos do site ficam diretamente na pasta da versão, sem subpasta intermediária:
+   `index.html`, `html/`, `css/`, `js/`, `public/`, `sitemap.xml`, `robots.txt`, `.htaccess`, `LEIA-ME.md`.
+3. Faça as alterações apenas na nova pasta.
+4. Registre a versão abaixo, no topo da lista (data e horário, o que mudou, se foi publicada), e faça o commit.
+
+Para publicar, envie o conteúdo da pasta da versão para a raiz da hospedagem (`public_html`).
+Pacotes .zip, quando gerados, ficam fora do repositório (o `.gitignore` os exclui).
+
+As versões v1.0 a v2.1 mantêm a nomenclatura anterior (`vX.Y_..._descricao/site-html/`) e não são renomeadas.
 
 Numeração: muda o primeiro número (v3.0) em mudança de tecnologia ou de estrutura;
 muda o segundo (v2.1, v2.2) em atualização de conteúdo, correção ou ajuste visual.
@@ -28,9 +36,8 @@ muda o segundo (v2.1, v2.2) em atualização de conteúdo, correção ou ajuste 
 ## Versões
 
 ### v2.2 — 18/11/2026, 10h28 — Pasta html/ (atual)
-Pasta: `v2.2_2026-11-18_10h28_html/`
-- `site-html/` — arquivos do site. Detalhes em `site-html/LEIA-ME.md`.
-- `site-filipe-denki_v2.2_2026-11-18_10h28.zip` — pacote pronto para extrair na pasta raiz da hospedagem (`public_html`).
+Pasta: `filipedenki-v2.2_2026-11-18_10h28_html/` — arquivos do site diretamente na pasta. Detalhes em `LEIA-ME.md`.
+- Primeira versão no padrão atual de pastas. Foi criada como `v2.2_2026-11-18_10h28_html/site-html/` (commit fe12467) e reorganizada no mesmo dia: pasta renomeada e subpasta `site-html/` removida, sem alteração de conteúdo (os 73 arquivos são idênticos aos do commit anterior).
 
 O que mudou em relação à v2.1:
 - Páginas reunidas na pasta `html/`; apenas `index.html` permanece na raiz.
