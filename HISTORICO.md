@@ -4,7 +4,11 @@
 Pasta: `filipedenki-v2.2_2026-11-18_10h28_html/`
 
 Repositório: `git@github.com:hianmatheuscmiranda/filipedenki.git` (cópia de trabalho em `Documents/GitHub/filipedenki`).
-As versões até a v2.1 também estão no OneDrive, em `Colaboradores/Hian/Site Denki/versoes/`.
+
+O repositório contém apenas a versão atual do site. As versões anteriores ficam:
+- no histórico do Git — v1.0 a v2.1 estão no commit `03c74a1` (e no `fe12467`); para recuperar uma pasta:
+  `git checkout 03c74a1 -- v2.1_2026-11-18_10h16_html`
+- no OneDrive, em `Colaboradores/Hian/Site Denki/versoes/` (v1.0 a v2.1, com os .zip e o `node_modules` da v1.0).
 
 A partir da v2.0, o site é mantido diretamente em HTML, CSS e JavaScript puro, sem framework.
 Novas alterações são feitas em uma nova versão; as versões anteriores ficam preservadas como histórico e não são editadas.
@@ -21,12 +25,16 @@ Padrão adotado a partir da v2.2 (modelo: `filipedenki-v2.2_2026-11-18_10h28_htm
 2. Os arquivos do site ficam diretamente na pasta da versão, sem subpasta intermediária:
    `index.html`, `html/`, `css/`, `js/`, `public/`, `sitemap.xml`, `robots.txt`, `.htaccess`, `LEIA-ME.md`.
 3. Faça as alterações apenas na nova pasta.
-4. Registre a versão abaixo, no topo da lista (data e horário, o que mudou, se foi publicada), e faça o commit.
+4. Registre a versão abaixo, no topo da lista (data e horário, o que mudou, se foi publicada).
+5. Remova do repositório a pasta da versão anterior, para que fique apenas a versão atual; ela continua acessível no histórico do Git
+   (anote no registro da versão anterior o commit em que ela ainda está presente). Em seguida, faça o commit.
 
 Para publicar, envie o conteúdo da pasta da versão para a raiz da hospedagem (`public_html`).
 Pacotes .zip, quando gerados, ficam fora do repositório (o `.gitignore` os exclui).
 
 As versões v1.0 a v2.1 mantêm a nomenclatura anterior (`vX.Y_..._descricao/site-html/`) e não são renomeadas.
+
+Nas versões anteriores, o campo "Pasta" indica o nome que a pasta tinha quando estava no repositório.
 
 Numeração: muda o primeiro número (v3.0) em mudança de tecnologia ou de estrutura;
 muda o segundo (v2.1, v2.2) em atualização de conteúdo, correção ou ajuste visual.
@@ -52,7 +60,7 @@ Atenção na publicação: se uma versão anterior já estiver no servidor, apag
 Situação: pronta para publicação; publicação a cargo do usuário.
 
 ### v2.1 — 18/11/2026, 10h16 — Pasta public/
-Pasta: `v2.1_2026-11-18_10h16_html/`
+Pasta: `v2.1_2026-11-18_10h16_html/` — fora do repositório; disponível no commit `03c74a1` e no OneDrive.
 - `site-html/` — arquivos do site. Detalhes em `site-html/LEIA-ME.md`.
 - `site-filipe-denki_v2.1_2026-11-18_10h16.zip` — pacote pronto para extrair na pasta raiz da hospedagem (`public_html`).
 
@@ -72,7 +80,7 @@ Atenção na publicação: se a v2.0 já estiver no servidor, apague as pastas a
 Situação: pronta para publicação; publicação a cargo do usuário.
 
 ### v2.0 — 18/11/2026, 09h58 — HTML, CSS e JS
-Pasta: `v2.0_2026-11-18_09h58_html/`
+Pasta: `v2.0_2026-11-18_09h58_html/` — fora do repositório; disponível no commit `03c74a1` e no OneDrive.
 - `site-html/` — arquivos do site (12 páginas `.html`, `css/`, `js/`, `fonts/`, `assets/`, `sitemap.xml`, `robots.txt`, `.htaccess`). Detalhes em `site-html/LEIA-ME.md`.
 - `site-filipe-denki_v2.0_2026-11-18_09h58.zip` — pacote pronto para extrair na pasta raiz da hospedagem (`public_html`).
 
@@ -91,7 +99,7 @@ Situação: entregue em 18/11/2026 para publicação; publicação a cargo do us
 Pendências herdadas: formulários (contato, lista de espera, newsletter) não enviam e-mail; marcadores "[a informar]" e vídeos provisórios.
 
 ### v1.0 — 28/10/2026, 19h20 — Vue 3 + Vite (arquivada)
-Pasta: `v1.0_2026-10-28_19h20_vue/filipe-denki-site/`
+Pasta: `v1.0_2026-10-28_19h20_vue/filipe-denki-site/` — fora do repositório; disponível no commit `03c74a1` (sem `node_modules`) e no OneDrive.
 - Projeto original em Vue 3 + Vite, convertido do protótipo. Instruções no `README.md` do projeto.
 - Horário de identificação: último arquivo original modificado (28/10/2026, 19h20).
 - Mantida apenas como referência histórica.

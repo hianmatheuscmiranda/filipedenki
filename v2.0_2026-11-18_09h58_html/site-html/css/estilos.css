@@ -1,9 +1,0 @@
-/* Estilos globais. Os estilos de cada bloco estão no próprio HTML (atributo style). */
-*, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; overflow-wrap: anywhere; font-family: Montserrat, 'Helvetica Neue', Arial, sans-serif; color: #24262B; background: #FFFFFF; }
-img { max-width: 100%; }
-a { color: #14213D; }
-a:hover { color: #6D1F32; }
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #6D1F32; outline-offset: 3px; }
-.dc-page { min-height: 100vh; }

@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin.html
-Disallow: /sistema.html
-Sitemap: https://www.filipedenki.com.br/sitemap.xml
