@@ -1,0 +1,12 @@
+# Dependências do projeto Vue (v1.0) — recriáveis com "npm install"
+node_modules/
+
+# Pacotes .zip de publicação — ficam só no computador; o conteúdo já está em site-html/
+*.zip
+
+# Arquivos de ambiente, build e sistema
+.env
+dist/
+.DS_Store
+Thumbs.db
+desktop.ini

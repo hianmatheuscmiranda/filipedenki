@@ -1,0 +1,14 @@
+# Apache / Hostinger
+# As páginas ficam em /html/. Endereços curtos (/sobre) e os antigos da raiz (/sobre.html)
+# são redirecionados para /html/sobre.html, preservando links já divulgados e a indexação.
+Options -MultiViews
+RewriteEngine On
+RewriteRule ^(sobre|publicacoes|artigo|livros|cursos|videos|imprensa|eventos|contato|admin|sistema)(\.html)?/?$ /html/$1.html [R=301,L]
+ErrorDocument 404 /index.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+</IfModule>
